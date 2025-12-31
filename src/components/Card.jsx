@@ -19,7 +19,7 @@ const Card = (props) => {
         />
 
         <div className="absolute bottom-0 w-full bg-black/30 backdrop-blur-md p-3">
-          <p className="text-white text-sm">{item.author}</p>
+          <p className="text-white text-md font-semibold">{item.author}</p>
         </div>
       </a>
     ))}

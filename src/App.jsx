@@ -11,7 +11,7 @@ const App = () => {
   useEffect(() => {
     const fetchData = async() =>{
       setLoading(true)
-      const res = await axios.get(`https://picsum.photos/v2/list?page=${index}&limit=20`)
+      const res = await axios.get(`https://picsum.photos/v2/list?page=${index}&limit=100`)
       setGetData(res.data)
       setLoading(false)
     }
@@ -22,7 +22,7 @@ const App = () => {
 
   return (
     <div >
-      <main className='h-full bg-gray-200'>
+      <main className='h-full bg-gray-200 py-10'>
         {loading ? (
         <h1 className="flex min-h-screen justify-center items-center text-gray-400 text-4xl font-semibold">
           Loading...
